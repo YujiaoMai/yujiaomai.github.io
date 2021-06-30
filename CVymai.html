@@ -52,13 +52,20 @@ a:link, span.MsoHyperlink
 	{color:blue;
 	text-decoration:underline;
 	}
+.adm{
+ clear:both;
+}
 p.MH1, li.MH1, div.MH1
 	{mso-style-name:MH1;
 	mso-style-link:"MH1 Char";
-	margin:0in;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:24pt;
+	margin-left:0in;
 	font-size:22.0pt;
 	font-family:"Arial Black",sans-serif;
 	font-weight:bold;
+	width:100%;
 	}
 span.MH1Char
 	{mso-style-name:"MH1 Char";
@@ -67,18 +74,36 @@ span.MH1Char
 	font-size:22.0pt;
 	font-weight:bold;
 	}
+div.MH1L
+	{mso-style-name:MH1;
+	mso-style-link:"MH1 Char";
+	margin:0in;
+	float:left;
+	width:50%;
+	text-align:left;
+	}	
+div.MH1R
+	{mso-style-name:MH1;
+	mso-style-link:"MH1 Char";
+	margin:0in;
+	float:right;
+	width:50%;
+	text-align:left;
+	}
 p.MH2, li.MH2, div.MH2
 	{mso-style-name:MH2;
 	mso-style-link:"MH2 Char";
-	margin-top:6.0pt;
+	margin-top:18.0pt;
 	margin-right:0in;
-	margin-bottom:0pt;
+	margin-bottom:6pt;
 	margin-left:0in;
-	page-break-after:avoid;
-	border:none;
-	padding:0in;
+	page-break-after:avoid;	
 	font-size:16.0pt;
 	font-weight:bold;
+	border:none;
+	border-bottom:solid windowtext 1.0pt;
+	padding:0in;
+	width:100%;
 	}
 span.MH2Char
 	{mso-style-name:"MH2 Char";
@@ -94,6 +119,7 @@ p.MH3, li.MH3, div.MH3
 	margin-bottom:0in;
 	margin-left:0in;
 	font-size:12.0pt;
+	width:100%;
 	}
 span.MH3Char
 	{mso-style-name:"MH3 Char";
@@ -101,6 +127,30 @@ span.MH3Char
 	font-size:12.0pt;	
 	font-weight:bold;
 }
+div.MH3L
+	{mso-style-name:MH3;
+	mso-style-link:"MH3 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	width: 80%;
+	text-align:left;
+	float:left;
+	}
+div.MH3R
+	{mso-style-name:MH3;
+	mso-style-link:"MH3 Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	width: 20%;
+	text-align: right;
+	float:left;
+	}
 p.MH4, li.MH4, div.MH4
 	{mso-style-name:MH4;
 	mso-style-link:"MH4 Char";
@@ -110,6 +160,7 @@ p.MH4, li.MH4, div.MH4
 	margin-left:0in;
 	font-size:11pt;
 	font-style:italic;
+	width:100%;
 }
 span.MH4Char
 	{mso-style-name:"MH4 Char";
@@ -126,6 +177,7 @@ p.MH5, li.MH5, div.MH5
 	margin-left:0in;
 	font-size:10.5pt;
 	font-style:italic;
+	width:100%;
 }
 span.MH5Char
 	{mso-style-name:"MH5 Char";
@@ -178,10 +230,15 @@ div.WordSection1
 	text-align:left;
 	}
  /* List Definitions */
- ol
+ol
 	{margin-bottom:0in;}
- ul
-	{margin-bottom:0in;}
+ul {
+  list-style: circle; /* Remove HTML bullets */
+  margin-left: 8px;
+  padding-right: 8px;
+}
+
+
 -->
 </style>
 </head>
@@ -215,187 +272,165 @@ div.WordSection1
 
 <div class="jumbotron">
   <div class='container text-center' >   
-    	
+ 
+<!-- Begin of CV Content  --> 
 <div class=WordSection1>
 
-<p class=MH1>Yujiao Mai</p>
-
-<p class=MH5>Web: <a href="https://yujiaomai.github.io/">https://yujiaomai.github.io/</a></p>
-
-<p class=MH5>Email: yujiaomai@gmail.com</p>
-
-<p class=MH5>Address: Memphis, TN 38120, USA</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>RESEARCH INTERESTS</p>
-
+<div class=MH1>
+	<div class=MH1L><p class=MH1>Yujiao Mai</p></div>
+	<div class=MH1R>
+	<p class=MH5>Web: <a href="https://yujiaomai.github.io/">https://yujiaomai.github.io/</a></p>
+	<p class=MH5>Email: yujiaomai@gmail.com</p>
+	<p class=MH5>Address: Memphis, TN 38120, USA</p>
+	</div>
+</div>
+<div class=adm>
+<div class=MH2>SUMMARY</div>
+<div  class=MsNormal>
+<p class=MList1>&#9883; Ten-year experience in data analysis, advancing statistical methods, and developing statistical computing tools</p>
+<p class=MList1>&#9883; Ten-year practicing of collaborative research in Psychology, Public Health, and Cancer</p>
+<p class=MList1>&#9883; Specialize in structural equation modeling, mediation effect, and mixed effect analysis</p>
+<p class=MList1>&#9883; Excel in programming using R, SAS, SPSS, SQL, Mplus, PHP, JavaScript, C++, and Python</p>
+<p class=MList1>&#9883; Familiar with Linux high-performance computing and a quick learner of computing techniques</p>
 </div>
 
-<p class=MsoNormal>Applying quantitative methods to find Cancer cures; Software packages development; 
-Structural equation modeling (SEM); Mediation analysis; Psychological measurements; Machine learning</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>EDUCATION</p>
-
+<div class=MH2>EDUCATIONS</div>
+<div class=MH3>
+<div class=MH3L><span class=MH3Char>Ph.D.</span> in <span class=MH3Char>Quantitative Psychology (Statistics in Psychology)</span></div>
+<div class=MH3R>&nbsp;&nbsp;2011 - 2014</div>
+<div class=adm><p class=MH4>South China Normal University, Guangzhou, China</P></div>
 </div>
 
-<p class=MH3><span class=MH3Char>BS</span> in <span
-class=MH3Char>Computer Science and Technology</span> (Minor:Law)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2001 - 2005</p>
-<p class=MH4>South China Normal University, Guangzhou, China</p>
-
-<p class=MH3><span class=MH3Char>MS</span> in <span class=MH3Char>Developmental and Educational Psychology</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2005 - 2008</p>
-<p class=MH4>South China Normal University, Guangzhou, China</p>
-
-<p class=MH3><span class=MH3Char>PhD</span> in <span class=MH3Char>Quantitative Psychology (Statistics in Psychology)</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2011 - 2014</p>
-<p class=MH4>South China Normal University, Guangzhou, China</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>TRAININGS</p>
-
+<div class=MH3>
+<div class=MH3L><span class=MH3Char>M.S.</span> in <span class=MH3Char>Developmental and Educational Psychology</span></div>
+<div class=MH3R>&nbsp;&nbsp;2005 - 2008</div>
+<div class=adm><p class=MH4>South China Normal University, Guangzhou, China</p></div>
+</div>
+<div class=MH3>
+<div class=MH3L><span class=MH3Char>B.S.</span> in <span class=MH3Char>Computer Science and Technology</span>(Minor:Law)</div>
+<div class=MH3R>&nbsp;&nbsp;2001 - 2005</div>
+<div class=adm><p class=MH4>South China Normal University, Guangzhou, China</p></div>
 </div>
 
-<p class=MH3><span class=MH3Char>Postdoc in Quantitative Psychology</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014 - 2017</span></p>
-<p class=MH4>University of Notre Dame, IN, USA</p>
-
-<p class=MList1>&#10147;  Key developer and researcher of the web-based statistical data analysis software WebSEM 
-(<a href="https://www.youtube.com/watch?v=UzWXjskcvv8">websem.psychstat.org</a>)
-(R, mySQL, PHP, Javascript)</p>
-
-<p class=MList1>&#10147;  Key developer and researcher of the web-based statistical power analysis software WebPower 
-(<a href="https://webpower.psychstat.org/wiki/">webpower.psychstat.org</a>)
-(R, mySQL, PHP, Javascript)</p>
-
-<p class=MList1>&#10147;  Led workshops tutoring on the online statistical software WebSEM and WebPower </p>
-
-<p class=MList1>&#10147;  Prepared journal manuscripts and present research at international conferences</p>
-
-<p class=MH3><span class=MH3Char>Postdocin Biostatistics</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 - 2018</span></p>
-<p class=MH4>University of Central Florida, FL, USA</p>
-
-<p class=MList1>&#10147;  Developed statistical methods and SAS macros</p>
-
-<p class=MList1>&#10147;  Investigated (national) survey data about tobacco use/ Crohn's disease</p>
-
-<p class=MList1>&#10147;  Helped on grant proposals about tobacco use in the LGBT community</p>
-
-<p class=MList1>&#10147;  Mentored students on research and offered biostatistics consulting service</p>
-
-<p class=MH3><span class=MH3Char>Postdoc in Biostatistics</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018 - 2020</span></p>
-<p class=MH4>St. Jude Children's Research Hospital, TN, USA</p>
-
-<p class=MList1>&#10147;  Improved statistical methods, develop R packages/SAS macros, and
-publish papers</p>
-
-<p class=MList1>&#10147;  Served with statistic consultation for collaboration research
-focusing on Cancer</p>
-
-<p class=MList1>&#10147;  Participated in the clinical research protocol review</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>POSITIONS</p>
+<div class=MH2>EMPLOYMENTS</div>
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Postdoc in Biostatistics</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;2018 - 2020</span></div>
+	<div class=adm>
+	<p class=MH4>St. Jude Children's Research Hospital, TN, USA</p>
+	<p class=MList1>&#9632;  Improved statistical methods, develop R packages/SAS macros, and published papers</p>
+	<p class=MList1>&#9632;  Served with statistic consultation for collaboration research to find cancer cures</p>
+	<p class=MList1>&#9632;  Participated in the clinical research protocol review</p>
+	</div>
 </div>
-<p class=MH3><span class=MH3Char>Senior Researcher/Data Analyst (SQL server)</span>
-<span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2008 - 2012</span></p>
-<p class=MH4>Zhenai Inc., Shenzhen, CHINA</p>
-<p class=MH3><span class=MH3Char>Part-time Lecturer, Statistics in Psychology &amp; SPSS</span>
-<span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spring 2013</span></p>
-<p class=MH4>Guangdong University of Foreign Studies, Guangzhou, CHINA</p>
-<p class=MH3><span class=MH3Char>Part-time Lecturer, Cognitive Psychology &amp; Experiment</span>
-<span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spring 2013</span></p>
-<p class=MH4>Guangdong University of Foreign Studies, Guangzhou, CHINA</p>
-<p class=MH3><span class=MH3Char>Lecturer, Python Basic for Data Science</span>
-<span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Summer 2021</span></p>
-<p class=MH4>International Society for Data Science and Analytics (ISDSA) Academy, IN, USA</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>PUBLICATIONS</p>
-
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Postdoc in Biostatistics</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;2017 - 2018</span></div>
+	<div class=adm>
+	<p class=MH4>University of Central Florida, FL, USA</p>
+	<p class=MList1>&#9632;  Developed statistical methods and SAS macros for national surveys </p>
+	<p class=MList1>&#9632;  Investigated topics about smoking policies and tobacco use</p>
+	<p class=MList1>&#9632;  Helped on grant proposals about smoking policies and tobacco use in the U.S.</p>
+	<p class=MList1>&#9632;  Mentored students on public health research and conference presentation</p>
+	<p class=MList1>&#9632;  Offered biostatistics consulting service</p>
+	</div>
+</div>
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Postdoc in Quantitative Psychology</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;2014 - 2017</span></div>
+	<div class=adm>
+	<p class=MH4>University of Notre Dame, IN, USA</p>
+	<p class=MList1>&#9632;  Key developer and researcher of the web-based statistical data analysis software WebSEM 
+	(<a href="https://www.youtube.com/watch?v=UzWXjskcvv8">websem.psychstat.org</a>)(R, mySQL, PHP, Javascript)</p>
+	<p class=MList1>&#9632;  Key developer and researcher of the web-based statistical power analysis software WebPower 
+	(<a href="https://webpower.psychstat.org/wiki/">webpower.psychstat.org</a>)(R, mySQL, PHP, Javascript)</p>
+	<p class=MList1>&#9632;  Led workshops tutoring on the online statistical software WebSEM and WebPower </p>
+	<p class=MList1>&#9632;  Prepared journal manuscripts and presented research at international conferences</p>
+	</div>
+</div>
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Part-time Lecturer, Statistics in Psychology &amp; SPSS</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;Spring 2013</span></div>
+	<div class=adm><p class=MH4>Guangdong University of Foreign Studies, Guangzhou, CHINA</p></div>
+</div>
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Part-time Lecturer, Cognitive Psychology &amp; Experiment</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;Spring 2013</span></div>
+	<div class=adm><p class=MH4>Guangdong University of Foreign Studies, Guangzhou, CHINA</p></div>
 </div>
 
+<div class=MH3>
+	<div class=MH3L><span class=MH3Char>Senior Researcher/Data Analyst (SQL server)</span></div>
+	<div class=MH3R><span>&nbsp;&nbsp;2008 - 2012</span></div>
+	<div class=adm><p class=MH4>Zhenai.com, Shenzhen, CHINA</p></div>
+	<div class=adm>
+	<p class=MH4>University of Central Florida, FL, USA</p>
+	<p class=MList1>&#9632;  Led the project to develop a psychological-personality assessment system for customers </p>
+	<p class=MList1>&#9632;  Researched human dating behaviors and marriage (couple) compatibility</p>
+	<p class=MList1>&#9632;  Improved strategy for customer-relation management using data mining (SPSS and SQL server)</p>
+	<p class=MList1>&#9632;  Built the statistical dashboards to monitor online user behaviors and business growth</p>
+	<p class=MList1>&#9632;  Edited a handbook of mating psychology for customer service and trained the representatives</p>
+	</div>
+</div>
+
+<div class=MH2>PUBLICATIONS</div>
 <p class=MH3><span class=MH3Char>PEER REVIEWED:</span></p>
 
-<p class=MList2>Li D., Zhang, W., Li, N., Mai, Y., &amp; Yu, M. (2008). Future
-time perspective, goal orientation, social connectedness and undergraduates'
-academic adjustment. Psychological Development and Education, 24(1), 60-65. (In
-Chinese)</p>
-
-<p class=MList2>Li, N., Zhang, W., Li, D., Mai, Y., Wang, J., &amp; Xing, W.
-(2009). Parent-adolescent attachment, emotional intelligence, and aggression in
-adolescence. Psychological Development and Education, 25(2), 91-96. (In
-Chinese)</p>
-
-<p class=MList2>Wang, J., Zhang, W., Zhu, Z., Zhen, S., Mai, Y., &amp; Li, D. (2010).
-A modulating model for the impacting factors in self-regulated learning of
-college students. Acta Psychologica Sinica, 42(2), 262&#8722;270. (In Chinese)</p>
-
-<p class=MList2>Mai, Y., Hu, J., Yan, Z., Zhen, S., Wang, S., &amp; Zhang, W.
-(2012). Structure and function of maladaptive cognitions in Pathological
-Internet Use among Chinese adolescents. Computers in Human Behavior, 28(6),
-2376-2386.</p>
-
-<p class=MList2>Mai, Y., &amp; Wen, Z. (2013). Exploratory structural equation
-modeling: A hybrid of EFA and CFA. Advances in Psychological Science, 21(5),
-934-939. (In Chinese)</p>
-
+<p class=MList2>Mai, Y., &amp; Zhang, H. (in press). Classic linear mediation
+analysis of complex survey data using balanced repeated replication. In: Zhao,
+Y. &amp; Chen, D. (eds), Modern Statistical Methods for Health Research. New
+York, NY: Springer.</p>
+<p class=MList2>Zheng, J., An, X., Qian, J. Y., Mai, Y., Xu, Z., &amp; Xu, T.
+(2020). Research letter: ED90 of phenylephrine prophylactic bolus dose to
+prevent maternal hypotension during cesarean delivery.&nbsp;Journal of Clinical
+Anesthesia,&nbsp;64, 109812.</p>
+<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J. N. (2019). Multimediation
+method with balanced repeated replications for analysis of complex
+surveys.&nbsp;Structural Equation Modeling: A Multidisciplinary Journal, 26
+(5), 678-684.</p>
+<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J. N. (2019). Workplace
+smoking restrictions and support for smoking cessation in the USA: state,
+region, and overall trends from 2010-11 to 2014-15.&nbsp;Journal of Smoking
+Cessation, 1-10.</p>
+<p class=MList2>Mai, Y., Zhang, Z., &amp; Wen, Z. (2018). Comparing exploratory
+structural equation modeling and existing approaches for multiple regression
+with latent variables. Structural Equation Modeling: A Multidisciplinary
+Journal, 25(5), 737-749.</p>
+<p class=MList2>Mai, Y., &amp; Zhang, Z. (2018). Software packages for Bayesian
+multilevel modeling. Structural Equation Modeling: A Multidisciplinary Journal,
+25(4), 650-658.</p>
+<p class=MList2>Mai, Y., &amp; Soulakova, J. N. (2018). Retrospective reports
+of former smokers: Receiving doctor's advice to quit smoking and using
+behavioral interventions for smoking cessation in the United
+States.&nbsp;Preventive medicine reports, 11, 290-296.</p>
+<p class=MList2>Mai, Y., Leonardo, S., &amp; Soulakova, J. N. (2018).
+Smoke-free homes among single-parent families: Differences associated with
+parental race/ethnicity and smoking behaviors. Preventive Medicine Reports, 9,
+18-23.</p>
+<p class=MList2>Jiang, G., Mai, Y., &amp; Yuan, K. H. (2017). Advances in
+measurement invariance and mean comparison of latent variables: equivalence
+testing and a projection-based approach. Frontiers in psychology, 8, 1823-1823.</p>
 <p class=MList2>Mai, Y., &amp; Zhang, Z. (2017). Statistical power analysis for
 comparing means with binary or count data based on analogous ANOVA. In: van der
 Ark L., Wiberg M., Culpepper S., Douglas J., Wang WC. (eds) Quantitative
 Psychology. IMPS 2016. Springer Proceedings in Mathematics &amp; Statistics
 (vol 196, pp. 381-393). Cham, Switzerland: Springer.</p>
-
-<p class=MList2>Jiang, G., Mai, Y., &amp; Yuan, K. H. (2017). Advances in
-measurement invariance and mean comparison of latent variables: equivalence
-testing and a projection-based approach. Frontiers in psychology, 8, 1823-1823.</p>
-
-<p class=MList2>Mai, Y., Leonardo, S., &amp; Soulakova, J. N. (2018).
-Smoke-free homes among single-parent families: Differences associated with
-parental race/ethnicity and smoking behaviors. Preventive Medicine Reports, 9,
-18-23.</p>
-
-<p class=MList2>Mai, Y., &amp; Soulakova, J. N. (2018). Retrospective reports
-of former smokers: Receiving doctor's advice to quit smoking and using
-behavioral interventions for smoking cessation in the United
-States.&nbsp;Preventive medicine reports, 11, 290-296.</p>
-
-<p class=MList2>Mai, Y., &amp; Zhang, Z. (2018). Software packages for Bayesian
-multilevel modeling. Structural Equation Modeling: A Multidisciplinary Journal,
-25(4), 650-658.</p>
-
-<p class=MList2>Mai, Y., Zhang, Z., &amp; Wen, Z. (2018). Comparing exploratory
-structural equation modeling and existing approaches for multiple regression
-with latent variables. Structural Equation Modeling: A Multidisciplinary
-Journal, 25(5), 737-749.</p>
-
-<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J. N. (2019). Workplace
-smoking restrictions and support for smoking cessation in the USA: state,
-region, and overall trends from 2010-11 to 2014-15.&nbsp;Journal of Smoking
-Cessation, 1-10.</p>
-
-<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J. N. (2019). Multimediation
-method with balanced repeated replications for analysis of complex
-surveys.&nbsp;Structural Equation Modeling: A Multidisciplinary Journal, 26
-(5), 678-684.</p>
-
-<p class=MList2>Zheng, J., An, X., Qian, J. Y., Mai, Y., Xu, Z., &amp; Xu, T.
-(2020). Research letter: ED90 of phenylephrine prophylactic bolus dose to
-prevent maternal hypotension during cesarean delivery.&nbsp;Journal of Clinical
-Anesthesia,&nbsp;64, 109812.</p>
-
-<p class=MList2>Mai, Y., &amp; Zhang, H. (accepted). Classic linear mediation
-analysis of complex survey data using balanced repeated replication. In: Zhao,
-Y. &amp; Chen, D. (eds), Modern Statistical Methods for Health Research. New
-York, NY: Springer.</p>
+<p class=MList2>Mai, Y., &amp; Wen, Z. (2013). Exploratory structural equation
+modeling: A hybrid of EFA and CFA. Advances in Psychological Science, 21(5),
+934-939. (In Chinese)</p>
+<p class=MList2>Mai, Y., Hu, J., Yan, Z., Zhen, S., Wang, S., &amp; Zhang, W.
+(2012). Structure and function of maladaptive cognitions in Pathological
+Internet Use among Chinese adolescents. Computers in Human Behavior, 28(6),
+2376-2386.</p>
+<p class=MList2>Wang, J., Zhang, W., Zhu, Z., Zhen, S., Mai, Y., &amp; Li, D. (2010).
+A modulating model for the impacting factors in self-regulated learning of
+college students. Acta Psychologica Sinica, 42(2), 262&#8722;270.</p>
+<p class=MList2>Li, N., Zhang, W., Li, D., Mai, Y., Wang, J., &amp; Xing, W.
+(2009). Parent-adolescent attachment, emotional intelligence, and aggression in
+adolescence. Psychological Development and Education, 25(2), 91-96.</p>
+<p class=MList2>Li D., Zhang, W., Li, N., Mai, Y., &amp; Yu, M. (2008). Future
+time perspective, goal orientation, social connectedness and undergraduates'
+academic adjustment. Psychological Development and Education, 24(1), 60-65.</p>
 
 <p class=MH3><span class=MH3Char>UNDER REVIEW</span>:</p>
 
@@ -406,205 +441,159 @@ life factors. Journal of Pediatric Psychology.</p>
 
 <p class=MH3><span class=MH3Char>NON-PEER REVIEWED</span>:</p>
 
-<p class=MList2>Zhang, Z., Yuan, K.-H., &amp; Mai, Y. (2012-2017). WebSEM:
-Structural equation modeling online [Computer software manual]. Retrieved from
-https://websem.psychstat.org</p>
-
-<p class=MList2>Zhang, Z., Yuan, K.-H., &amp; Mai, Y. (2015-2017). WebPower:
-Statistical power analysis online [Computer software manual]. Retrieved from
-http://webpower.psychstat.org</p>
-
-<p class=MList2>Mai, Y., Zhang, Z., &amp; Yuan, K-H. (2016). An online
-interface for drawing path diagrams for structural equation modeling [Computer Software].
-Retrieved from http://semdiag.psychstat.org</p>
-
-<p class=MList2>Jiang, G., Mai, Y., &amp; Yuan, K. H. (2017). equaltestMI:
-Examine Measurement Invariance via Equivalence Testing and Projection Method
-(version 0.6.0) [Computer Software]. Retrieved from
-https://CRAN.R-project.org/package=equaltestMI</p>
-
-<p class=MList2>Zhang, Z., &amp; Mai, Y. (2018). 'WebPower': An R package for
-basic and advanced statistical power analysis (version 0.5) [Computer
-Software]. Retrieved from https://cran.r-project.org/web/packages/WebPower/WebPower.pdf</p>
-
-<p class=MList2>Zhang, Z., &amp; Mai, Y. (2018). Power analysis based on Monte
-Carlo simulation through diagrams. In: Zhang, Z., &amp; Yuan, K.-H. (eds)
-Practical Statistical Power Analysis Using WebPower and R (pp. 325-340).
-Granger, IN: ISDSA Press.</p>
-
-<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019). MedSurvey: Mediation
-analysis for complex surveys (version 1.1.1.2.0) [Computer Software]. Retrieved
-from https://cran.r-project.org/package=MedSurvey</p>
-
 <p class=MList2>Mai, Y., Srivastava, D. K., &amp; Krull, K. R. (2021).
 Omega-Generic: Composite Reliability of Multidimensional Measures (version 1.0.1)
 [Computer Software]. Retrieved from https://CRAN.R-project.org/package=OmegaG</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019). MedSurvey: Mediation
+analysis for complex surveys (version 1.1.1.2.0) [Computer Software]. Retrieved
+from https://cran.r-project.org/package=MedSurvey</p>
+<p class=MList2>Zhang, Z., &amp; Mai, Y. (2018). Power analysis based on Monte
+Carlo simulation through diagrams. In: Zhang, Z., &amp; Yuan, K.-H. (eds)
+Practical Statistical Power Analysis Using WebPower and R (pp. 325-340).
+Granger, IN: ISDSA Press.</p>
+<p class=MList2>Zhang, Z., &amp; Mai, Y. (2018). 'WebPower': An R package for
+basic and advanced statistical power analysis (version 0.5) [Computer
+Software]. Retrieved from https://cran.r-project.org/web/packages/WebPower/WebPower.pdf</p>
+<p class=MList2>Jiang, G., Mai, Y., &amp; Yuan, K. H. (2017). equaltestMI:
+Examine Measurement Invariance via Equivalence Testing and Projection Method
+(version 0.6.0) [Computer Software]. Retrieved from
+https://CRAN.R-project.org/package=equaltestMI</p>
+<p class=MList2>Mai, Y., Zhang, Z., &amp; Yuan, K-H. (2016). An online
+interface for drawing path diagrams for structural equation modeling [Computer Software].
+Retrieved from http://semdiag.psychstat.org</p>
+<p class=MList2>Zhang, Z., Yuan, K.-H., &amp; Mai, Y. (2015-2017). WebPower:
+Statistical power analysis online [Computer software manual]. Retrieved from
+http://webpower.psychstat.org</p>
+<p class=MList2>Zhang, Z., Yuan, K.-H., &amp; Mai, Y. (2012-2017). WebSEM:
+Structural equation modeling online [Computer software manual]. Retrieved from
+https://websem.psychstat.org</p>
 
-<p class=MH2>INVITED TALKS</p>
-
-</div>
+<div class=MH2>INVITED TALKS</div>
 
 <p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019 Nov).
 Classic mediation analysis for complex surveys with balanced repeated
 replications. Invited talk at Biostatistics Seminar of the University of
 Tennessee Health Science Center, Memphis, Tennessee: US.</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
 
-<p class=MH2>CONFERENCE ABSTRACTS</p>
-
-</div>
-
-<p class=MList2>Mai, Y., &amp; Wen, Z. (2014 Aug). Regression analysis with
-multidimensional latent: comparing ESEM and SEM. Poster presented at the 11th
-Cross-Straits Conference on Educational and Psychological Testing, Taiwan:
-China.</p>
-
-<p class=MList2>Mai, Y., &amp; Zhang, Z. (2015 April). A general framework for
-graphical representation of a statistical model with non-normal data. Paper
-presented at the 27th APS Annual Convention, New York, NY: US.</p>
-
-<p class=MList2>Mai, Y., &amp; Zhang, Z. (2016 May). Multilevel modeling
-through path diagramming: An online graphical interface. Poster presented at
-the 28th APS Annual Convention, Chicago, LI: US.</p>
-
-<p class=MList2>Mai, Y., &amp; Zhang, Z. (2016 July). Statistical power for
-one-way ANOVA with binary or count data. Paper presented at the 81th Annual
-Meeting of the Psychometric Society (IMPS), Asheville, NC: US.</p>
-
-<p class=MList2>Soulakova, J. N., &amp; Mai, Y. (2018 Feb). Smoking policy and
-support for smoking cessation offered at work: Recent trends in the United
-States. Paper presented at the 24th Annual Meeting of the Society for Research
-on Nicotine and Tobacco (SRNT), Baltimore, Maryland: US.</p>
-
-<p class=MList2>Tham, T., Mai, Y., &amp; Soulakova, J. N. (2018 March).
-Mediation analysis of big data: Detecting effect of a mediator. Poster
-presented at the University of Central Florida 2018 Big Data Series on
-Healthcare, Orlando, Florida: US.</p>
-
-<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019 May). SAS
-macros for linear mediation analysis with complex survey data. Presented at the
-2019 The 7th Workshop on Biostatistics and Bioinformatics, Atlanta, Georgia:
-US.</p>
-
-<p class=MList2>Mai, Y., Xu, J., Srivastava, D. K., &amp; Zhang, H. (2019
-July). Mediation analysis for complex surveys with balanced repeated
-replications. Presented at the International Society for Data Science and
-Analytics, Nanjing: China.</p>
-
-<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019 July).
-Mediation analysis with binary mediators: A new parametric method and R
-programs. Presented at the 2019 Joint Statistics Meeting, Denver, Colorado: US.</p>
-
-<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J.N. (2020 March). Workplace
-smoking policies and support for smoking cessation offered to employees who
-smoke in the US in the period from 2010 to 2015. Presented at the Society for
-Research on Nicotine and Tobacco Annual Meeting, New Orleans, LA: US.</p>
+<div class=MH2>CONFERENCE ABSTRACTS</div>
 
 <p class=MList2>Mai, Y., Srivastava, D. K., &amp; Krull, K. R. (2021 March).
 Estimating the Reliability of a Composite in Multidimensional Measurements with
 Overlapping Items. Presented at the Eastern North American Region (ENAR)
 International Biometric Society Spring Meeting 2021, Virtual.</p>
+<p class=MList2>Mai, Y., Ha, T., &amp; Soulakova, J.N. (2020 March). Workplace
+smoking policies and support for smoking cessation offered to employees who
+smoke in the US in the period from 2010 to 2015. Presented at the Society for
+Research on Nicotine and Tobacco Annual Meeting, New Orleans, LA: US.</p>
+<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019 July).
+Mediation analysis with binary mediators: A new parametric method and R
+programs. Presented at the 2019 Joint Statistics Meeting, Denver, Colorado: US.</p>
+<p class=MList2>Mai, Y., Xu, J., Srivastava, D. K., &amp; Zhang, H. (2019
+July). Mediation analysis for complex surveys with balanced repeated
+replications. Presented at the International Society for Data Science and
+Analytics, Nanjing: China.</p>
+<p class=MList2>Mai, Y., Srivastava, D. K., &amp; Zhang, H. (2019 May). SAS
+macros for linear mediation analysis with complex survey data. Presented at the
+2019 The 7th Workshop on Biostatistics and Bioinformatics, Atlanta, Georgia:
+US.</p>
+<p class=MList2>Tham, T., Mai, Y., &amp; Soulakova, J. N. (2018 March).
+Mediation analysis of big data: Detecting effect of a mediator. Poster
+presented at the University of Central Florida 2018 Big Data Series on
+Healthcare, Orlando, Florida: US.</p>
+<p class=MList2>Soulakova, J. N., &amp; Mai, Y. (2018 Feb). Smoking policy and
+support for smoking cessation offered at work: Recent trends in the United
+States. Paper presented at the 24th Annual Meeting of the Society for Research
+on Nicotine and Tobacco (SRNT), Baltimore, Maryland: US.</p>
+<p class=MList2>Mai, Y., &amp; Zhang, Z. (2016 July). Statistical power for
+one-way ANOVA with binary or count data. Paper presented at the 81th Annual
+Meeting of the Psychometric Society (IMPS), Asheville, NC: US.</p>
+<p class=MList2>Mai, Y., &amp; Zhang, Z. (2016 May). Multilevel modeling
+through path diagramming: An online graphical interface. Poster presented at
+the 28th APS Annual Convention, Chicago, LI: US.</p>
+<p class=MList2>Mai, Y., &amp; Zhang, Z. (2015 April). A general framework for
+graphical representation of a statistical model with non-normal data. Paper
+presented at the 27th APS Annual Convention, New York, NY: US.</p>
+<p class=MList2>Mai, Y., &amp; Wen, Z. (2014 Aug). Regression analysis with
+multidimensional latent: comparing ESEM and SEM. Poster presented at the 11th
+Cross-Straits Conference on Educational and Psychological Testing, Taiwan:
+China.</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+<div class=MH2>HONORS</div>
 
-<p class=MH2>HONORS</p>
-
-</div>
-
-<p class=MList1>&#10147;  Travel grant for junior faculty or isolated statistician from the
+<p class=MList1>&#9632;  Travel grant for junior faculty or isolated statistician from the
 Summer Research Conference Southern Regional Council on Statistics, 2018</p>
 
-<p class=MList1>&#10147;  Travel award for graduate student from the International Society
+<p class=MList1>&#9632;  Travel award for graduate student from the International Society
 for the Study of Behavioral Development biennial meeting, 2014</p>
 
-<p class=MList1>&#10147;  National scholarship for doctoral students from the China Ministry
+<p class=MList1>&#9632;  National scholarship for doctoral students from the China Ministry
 of Education, 2013</p>
 
-<p class=MList1>&#10147;  Award for doctoral student scientific research from South China
+<p class=MList1>&#9632;  Award for doctoral student scientific research from South China
 Normal University, 2012</p>
 
-<p class=MList1>&#10147;  Award for excellent researcher from South China Normal
+<p class=MList1>&#9632;  Award for excellent researcher from South China Normal
 University, 2007</p>
 
-<p class=MList1>&#10147;  Scholarship for undergraduate students from South China Normal
+<p class=MList1>&#9632;  Scholarship for undergraduate students from South China Normal
 University, 2002, 2004</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+<div class=MH2>FUNDINGS</div>
 
-<p class=MH2>FUNDINGS</p>
-
-</div>
-
-<p class=MList1>&#10147;  PI of the grant [2012kyjj106] from Graduate School of South China
-Normal University (Guangzhou, China), entitled 'Application of exploratory
-structural equation modeling in psychological research'. 2012-2014</p>
-
-<p class=MList1>&#10147;  PI of the startup grant of IU/TACC (Jetstream) allocation [TG-MTH210004],
+<p class=MList1>&#9632;  PI of the startup grant of IU/TACC (Jetstream) allocation [TG-MTH210004],
 entitled 'New Estimators for Mediation Effects in Complex Sampling Schemes: A
 Comparison with Applications', from The Extreme Science and Engineering
 Discovery Environment (XSEDE), which is supported by National Science
 Foundation grant [ACI-1548562]. 2021-2022</p>
+<p class=MList1>&#9632;  PI of the grant [2012kyjj106] from Graduate School of South China
+Normal University (Guangzhou, China), entitled 'Application of exploratory
+structural equation modeling in psychological research'. 2012-2014</p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
 
-<p class=MH2>MEMBERSHIPS</p>
 
-</div>
+<div  class=MH2>MEMBERSHIPS</div>
 
-<p class=MList1>&#10147;  Association for Psychological Science (APS), 2015-2016</p>
+<p class=MList1>&#9632;  American Statistical Association (ASA), 2017-present</p>
+<p class=MList1>&#9632;  American Association for Cancer Research (AACR), 2020-present</p>
+<p class=MList1>&#9632;  International Society for Data Science and Analytics (ISDSA), 2021-present</p>
+<p class=MList1>&#9632;  Association for Psychological Science (APS), 2015-2016</p>
 
-<p class=MList1>&#10147;  American Statistical Association (ASA), 2017-2021</p>
+<div class=MH2>SERVISES</div>
 
-<p class=MList1>&#10147;  American Association for Cancer Research (AACR), 2020-2021</p>
-
-<p class=MList1>&#10147;  International Society for Data Science and Analytics (ISDSA), 2021-present</p>
-
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
-
-<p class=MH2>SERVISES</p>
-
-</div>
-
-<p class=MList1>&#10147;  Board member of the International Society for Data Science and Analytics (ISDSA), 2021-present</p>
-
-<p class=MList1>&#10147;  Guest editor of the Journal of Behavioral Data Science, 2021-present</p>
-
-<p class=MList1>&#10147;  Reviewer of journal papers:
-<ul>
-<li>Structural Equation Modeling: A Multidisciplinary Journal (2 manuscripts)</li>
-<li>Journal of Statistical Computation and Simulation (3); </li>
-<li>Mathematics and Statistics (2);</li>
-<li>Bayesian Analysis (1); </li>
-<li>Mathematical Biosciences and Engineering (1); </li>
-<li>Plos One (1); </li>
-<li>Journal of Pediatric Rehabilitation (1); </li>
-<li>Asian Journal of Social Psychology (1); </li>
-</ul>
+<p class=MList1>&#9632;  Board member of the International Society for Data Science and Analytics (ISDSA), 2021-present</p>
+<p class=MList1>&#9632;  Guest editor of the Journal of Behavioral Data Science, 2021-present</p>
+<p class=MList1>&#9632;  Reviewer of journal papers:
+	<ul>
+	<li>Structural Equation Modeling: A Multidisciplinary Journal (2 manuscripts)</li>
+	<li>Journal of Statistical Computation and Simulation (3); </li>
+	<li>Mathematics and Statistics (2);</li>
+	<li>Bayesian Analysis (1); </li>
+	<li>Mathematical Biosciences and Engineering (1); </li>
+	<li>Plos One (1); </li>
+	<li>Journal of Pediatric Rehabilitation (1); </li>
+	<li>Asian Journal of Social Psychology (1); </li>
+	</ul>
 </p>
 
-<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+<div class=MH2>CERTIFICATES</div>
 
-<p class=MH2>CERTIFICATES</p>
-
-</div>
-
-<p class=MList1>&#10147;  'Phase II Clinical Development of New Drugs', course in the 7th
+<p class=MList1>&#9632;  'Data Science Methodology', course authorized by IBM in 2021 Feb., Coursera</P>
+<p class=MList1>&#9632;  'Machine Learning with Python', course authorized by IBM in 2021 Jan., Coursera</p>
+<p class=MList1>&#9632;  'Phase II Clinical Development of New Drugs', course in the 7th
 Workshop on Biostatistics and bioinformatics 2019 May, Atlanta, GA</p>
 
-<p class=MList1>&#10147;  'Data Science Methodology', course authorized by IBM in 2021 Feb., Coursera</p>
+</div>
 
-<p class=MList1>&#10147;  'Machine Learning with Python', course authorized by IBM in 2021 Jan., Coursera</p>
+
 
 
 </div>
-
+<!-- End of CV Content -->
 
   </div>
 </div>
-
 <footer class="container-fluid text-center">
   <p>Copyright&copy Yujiao Mai 2020-2021</p>
   <p>Webpage Template are from w3schools.com</p>
